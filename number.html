@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestP</title>
+</head>
+<body style="background-color: cadetblue;padding-top: 200px;padding-bottom: 0%;text-align: center;"  >
+    <div>
+        <h1>Mettre le 1er numero</h1>
+        <input type="number" value="" id="number1"/>
+    </div>
+<div style="display:inline-block;">
+    <h1>Mettre le 2eme numero</h1>
+    <input type="number" value="" id="number2"/>
+</div>    
+<div>
+    <h1>Mettre le 3eme numero </h1>
+    <input type="number" value=""  id="number3" />
+</div>  
+  <div>
+     <h1>Mettre le 4eme numero</h1>
+     <input type="number" value=""  id="number4"/>
+ </div>    
+    
+    <br>
+<div>
+        <button id="myBtn" >Total</button>
+        <input type="number" id="otal">
+</div>
+    <script>
+        "use strict";
+document.getElementById("myBtn").addEventListener("click",calculerSomme)
+function calculerSomme() {
+    var x =new Number(document.getElementById("number1").value);
+    
+    var y =new Number(document.getElementById("number2").value);
+    
+    var a =new Number(document.getElementById("number3").value);
+    
+    var b =new Number(document.getElementById("number4").value);
+    var somme = x + y + a + b;
+    document.getElementById("otal").value = somme;
+  }
+    </script>    
+</body>
+</html>
